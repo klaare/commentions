@@ -25,7 +25,7 @@ document.addEventListener('alpine:init', () => {
                             suggestion: suggestion(mentions),
                         }),
                         Placeholder.configure({
-                            placeholder: 'Type your comment…',
+                            placeholder: 'Laat een opmerking achter…',
                         }),
                     ],
                     editorProps: {
@@ -33,7 +33,7 @@ document.addEventListener('alpine:init', () => {
                             class: `comm:prose comm:dark:prose-invert comm:prose-sm comm:sm:prose-base comm:lg:prose-lg comm:xl:prose-2xl comm:focus:outline-none comm:p-4 comm:min-w-full comm:w-full comm:rounded-lg comm:border comm:border-gray-300 comm:dark:border-gray-700`,
                         },
                     },
-                    placeholder: 'Type something...',
+                    placeholder: 'Typ iets...',
                     content: content,
 
                     onCreate({ editor }) {
