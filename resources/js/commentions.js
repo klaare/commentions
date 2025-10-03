@@ -6,7 +6,7 @@ import suggestion from './suggestion'
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('editor', (content, mentions, component) => {
-        let editor
+        let editor = null;
 
         return {
             updatedAt: Date.now(),
@@ -64,7 +64,7 @@ document.addEventListener('alpine:init', () => {
             },
 
             isActive(type, opts = {}) {
-                return editor.isActive(type, opts)
+                return editor?.isActive(type, opts)
             },
         }
     })
